@@ -12,7 +12,7 @@ enum FlowDirections {
     case accountCreation
 }
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: NSObject, Coordinator {
     weak var parentCoordinator: Coordinator?
     
     var children: [Coordinator] = []
@@ -24,6 +24,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
+        navigationController.delegate = self
         let viewController = MainViewController()
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
@@ -56,6 +57,22 @@ class MainCoordinator: Coordinator {
                 children.remove(at: index)
                 break
             }
+        }
+    }
+}
+
+extension MainCoordinator: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else { return }
+        
+        if navigationController.viewControllers.contains(fromViewController) {
+            return
+        }
+        
+        if let viewController = fromViewController as? (any Coordinatable),
+           let coordinator = viewController.coordinator {
+            print("childDidFinish")
+            childDidFinish(child: coordinator)
         }
     }
 }

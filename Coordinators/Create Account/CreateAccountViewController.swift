@@ -7,16 +7,12 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class CreateAccountViewController: UIViewController, Coordinatable {
     
     weak var coordinator: CreateAccountCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        coordinator?.accountCreationFinished()
     }
 }

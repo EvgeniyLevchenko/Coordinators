@@ -19,7 +19,6 @@ class AppCoordinator: Coordinator {
     func start() {
         let child = MainCoordinator(navigationController: navigationController)
         children.append(child)
-        
         child.start()
     }
 }

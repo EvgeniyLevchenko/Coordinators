@@ -7,17 +7,12 @@
 
 import UIKit
 
-class BuyViewController: UIViewController {
+class BuyViewController: UIViewController, Coordinatable {
     
     weak var coordinator: BuyCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        coordinator?.buyFinished()
     }
 }

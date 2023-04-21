@@ -19,6 +19,7 @@
 		4B96ADAA29F2BBC500792D62 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96ADA929F2BBC500792D62 /* CreateAccountViewController.swift */; };
 		4B96ADAE29F2C20D00792D62 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96ADAD29F2C20D00792D62 /* BuyCoordinator.swift */; };
 		4B96ADB029F2C74D00792D62 /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96ADAF29F2C74D00792D62 /* CreateAccountCoordinator.swift */; };
+		4B96ADB429F2D42A00792D62 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B96ADB329F2D42A00792D62 /* Coordinatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4B96ADA929F2BBC500792D62 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4B96ADAD29F2C20D00792D62 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		4B96ADAF29F2C74D00792D62 /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		4B96ADB329F2D42A00792D62 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4B96AD9D29F2B85900792D62 /* Coordinator.swift */,
+				4B96ADB329F2D42A00792D62 /* Coordinatable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				4B96AD8E29F2B7F800792D62 /* MainViewController.swift in Sources */,
 				4B96AD8A29F2B7F800792D62 /* AppDelegate.swift in Sources */,
 				4B96ADAA29F2BBC500792D62 /* CreateAccountViewController.swift in Sources */,
+				4B96ADB429F2D42A00792D62 /* Coordinatable.swift in Sources */,
 				4B96ADB029F2C74D00792D62 /* CreateAccountCoordinator.swift in Sources */,
 				4B96ADA429F2B90E00792D62 /* MainCoordinator.swift in Sources */,
 				4B96ADA829F2BBB600792D62 /* BuyViewController.swift in Sources */,

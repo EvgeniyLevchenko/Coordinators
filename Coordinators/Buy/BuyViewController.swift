@@ -14,5 +14,6 @@ class BuyViewController: UIViewController, Coordinatable {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        print("Let's buy something!")
     }
 }
